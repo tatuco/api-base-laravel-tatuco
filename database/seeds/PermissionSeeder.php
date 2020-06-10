@@ -17,7 +17,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'index users',
             'slug'=>'index.users',
-            'account_id' => 1,
             'description' => 'list users',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -32,7 +31,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'update user',
             'slug'=>'update.users',
-            'account_id' => 1,
             'description' => 'update user',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -46,7 +44,6 @@ class PermissionSeeder extends Seeder
 
         DB::table('permissions')->insert([
             'name'=> 'show user',
-            'account_id' => 1,
             'slug'=>'show.users',
             'description' => 'show user',
             'created_at'=> new DateTime,
@@ -62,7 +59,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'delete user',
             'slug'=>'delete.users',
-            'account_id' => 1,
             'description' => 'delete user',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -77,7 +73,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'store user',
             'slug'=>'store.users',
-            'account_id' => 1,
             'description' => 'store user',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -95,7 +90,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'index accounts',
             'slug'=>'index.accounts',
-            'account_id' => 1,
             'description' => 'list accounts',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -110,7 +104,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'update account',
             'slug'=>'update.accounts',
-            'account_id' => 1,
             'description' => 'update account',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -124,7 +117,6 @@ class PermissionSeeder extends Seeder
 
         DB::table('permissions')->insert([
             'name'=> 'show account',
-            'account_id' => 1,
             'slug'=>'show.accounts',
             'description' => 'show account',
             'created_at'=> new DateTime,
@@ -140,7 +132,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'delete account',
             'slug'=>'delete.accounts',
-            'account_id' => 1,
             'description' => 'delete account',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -155,7 +146,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'store account',
             'slug'=>'store.accounts',
-            'account_id' => 1,
             'description' => 'store account',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -173,7 +163,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'index roles',
             'slug'=>'index.roles',
-            'account_id' => 1,
             'description' => 'list roles',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -188,7 +177,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'update role',
             'slug'=>'update.roles',
-            'account_id' => 1,
             'description' => 'update roles',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -202,7 +190,6 @@ class PermissionSeeder extends Seeder
 
         DB::table('permissions')->insert([
             'name'=> 'show roles',
-            'account_id' => 1,
             'slug'=>'show.roles',
             'description' => 'show roles',
             'created_at'=> new DateTime,
@@ -218,7 +205,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'delete roles',
             'slug'=>'delete.roles',
-            'account_id' => 1,
             'description' => 'delete roles',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -233,7 +219,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'store roles',
             'slug'=>'store.roles',
-            'account_id' => 1,
             'description' => 'store roles',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -251,7 +236,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'index permissions',
             'slug'=>'index.permissions',
-            'account_id' => 1,
             'description' => 'list permissions',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -266,7 +250,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'update role',
             'slug'=>'update.permissions',
-            'account_id' => 1,
             'description' => 'update permissions',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -280,7 +263,6 @@ class PermissionSeeder extends Seeder
 
         DB::table('permissions')->insert([
             'name'=> 'show permissions',
-            'account_id' => 1,
             'slug'=>'show.permissions',
             'description' => 'show permissions',
             'created_at'=> new DateTime,
@@ -296,7 +278,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'delete permissions',
             'slug'=>'delete.permissions',
-            'account_id' => 1,
             'description' => 'delete permissions',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -311,7 +292,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'store permissions',
             'slug'=>'store.permissions',
-            'account_id' => 1,
             'description' => 'store permissions',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -329,7 +309,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'index projects',
             'slug'=>'index.projects',
-            'account_id' => 1,
             'description' => 'list projects',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -344,7 +323,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'update projects',
             'slug'=>'update.projects',
-            'account_id' => 1,
             'description' => 'update projects',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -358,7 +336,6 @@ class PermissionSeeder extends Seeder
 
         DB::table('permissions')->insert([
             'name'=> 'show projects',
-            'account_id' => 1,
             'slug'=>'show.projects',
             'description' => 'show projects',
             'created_at'=> new DateTime,
@@ -374,7 +351,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'delete projects',
             'slug'=>'delete.projects',
-            'account_id' => 1,
             'description' => 'delete projects',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -389,7 +365,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'store projects',
             'slug'=>'store.projects',
-            'account_id' => 1,
             'description' => 'store projects',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -407,7 +382,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'index probes',
             'slug'=>'index.probes',
-            'account_id' => 1,
             'description' => 'list probes',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -422,7 +396,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'update probe',
             'slug'=>'update.probes',
-            'account_id' => 1,
             'description' => 'update probes',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -436,7 +409,6 @@ class PermissionSeeder extends Seeder
 
         DB::table('permissions')->insert([
             'name'=> 'show probes',
-            'account_id' => 1,
             'slug'=>'show.probes',
             'description' => 'show probes',
             'created_at'=> new DateTime,
@@ -452,7 +424,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'delete probes',
             'slug'=>'delete.probes',
-            'account_id' => 1,
             'description' => 'delete probes',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -467,7 +438,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'store probes',
             'slug'=>'store.probes',
-            'account_id' => 1,
             'description' => 'store probes',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -485,7 +455,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'index boxes',
             'slug'=>'index.boxes',
-            'account_id' => 1,
             'description' => 'list boxes',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -500,7 +469,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'update boxe',
             'slug'=>'update.boxes',
-            'account_id' => 1,
             'description' => 'update boxes',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -514,7 +482,6 @@ class PermissionSeeder extends Seeder
 
         DB::table('permissions')->insert([
             'name'=> 'show boxes',
-            'account_id' => 1,
             'slug'=>'show.boxes',
             'description' => 'show boxes',
             'created_at'=> new DateTime,
@@ -530,7 +497,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'delete boxes',
             'slug'=>'delete.boxes',
-            'account_id' => 1,
             'description' => 'delete boxes',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -545,7 +511,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'store boxes',
             'slug'=>'store.boxes',
-            'account_id' => 1,
             'description' => 'store boxes',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -560,7 +525,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'assigned role',
             'slug'=>'assigned.roles',
-            'account_id' => 1,
             'description' => 'asignar rol',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -574,7 +538,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'revoke role',
             'slug'=>'revoke.role',
-            'account_id' => 1,
             'description' => 'quitar rol a usuario',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -588,7 +551,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'asignar permiso',
             'slug'=>'assigned.permission',
-            'account_id' => 1,
             'description' => 'asignar permiso a rol',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime
@@ -602,7 +564,6 @@ class PermissionSeeder extends Seeder
         DB::table('permissions')->insert([
             'name'=> 'quitar permiso',
             'slug'=>'revoke.permission',
-            'account_id' => 1,
             'description' => 'quitar permiso a rol',
             'created_at'=> new DateTime,
             'updated_at'=> new DateTime

@@ -49,11 +49,6 @@ class TatucoController extends BaseController
 
     public function store(Request $request)
     {
-     /*   $accountId = env("ACCOUNT_ID", 1);
-        $user = JWTAuth::parseToken()->authenticate();
-        if ($user->account_id == $accountId) {
-            $request->merge(["account_id"=> $accountId]);
-        }*/
         $validator = Validator::make($request->all(), array_merge($this->validateStore, $this->validateDefault));
         if ($validator->fails()) {
             return response()->json([

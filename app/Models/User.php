@@ -30,7 +30,7 @@ class User extends Authenticatable implements JWTSubject
     protected $modelo;
     protected $casts = ["deleted" => 'boolean'];
     protected $fillable = [
-        'name', 'email', 'password', 'remember_token','date_expiration_password',"account_id", "deleted"
+        'name', 'email', 'password', 'remember_token','date_expiration_password', "deleted"
     ];
 
 
@@ -44,18 +44,12 @@ class User extends Authenticatable implements JWTSubject
         'password','date_expiration_password'
     ];
 
-    public function account()
-    {
-        return $this->belongsTo(Account::class, 'account_id', 'id');
-    }
-
     public function sendPasswordResetNotification($token)
     {
         $this->notify(new ResetPassword($token));
     }
 
     public function scopeDoWhere($query, $request) {
-        $accountId = env("ACCOUNT_ID", 1);
         $user = JWTAuth::parseToken()->authenticate();
         $list = QueryBuilder::for(static::class)
             ->select($this->getColumns($request))
@@ -63,10 +57,6 @@ class User extends Authenticatable implements JWTSubject
             ->doWhere($this->getWhere($request))
             ->where("deleted", false)
             ->sort($this->getSort($request));
-        if ($user->account_id != $accountId) {
-            $list->where("account_id", $user->account_id);
-        }
-
 
         if(isset($_GET['limit']))
         {

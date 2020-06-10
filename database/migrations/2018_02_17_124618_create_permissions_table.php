@@ -20,8 +20,6 @@ class CreatePermissionsTable extends Migration
             $table->string('slug', 25)->unique();
             $table->string('description', 50)->nullable();
             $table->boolean('deleted')->default(false);
-            $table->integer('account_id');
-            $table->foreign('account_id')->references('id')->on('accounts');
             $table->timestamps();
         });
     }

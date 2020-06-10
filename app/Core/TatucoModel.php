@@ -34,23 +34,14 @@ class TatucoModel extends Model
 
     public function scopeDoWhere($query, $request) {
 
-     /*   $list = QueryBuilder::for(static::class)
-            ->select($this->getColumns($request))
-            ->doJoin($this->getJoins($request))
-            ->doWhere($this->getWhere($request))
-            ->sort($this->getSort($request));*/
 
-        $accountId = env("ACCOUNT_ID", 1);
-        $user = JWTAuth::parseToken()->authenticate();
+       // $user = JWTAuth::parseToken()->authenticate();
         $list = QueryBuilder::for(static::class)
             ->select($this->getColumns($request))
             ->doJoin($this->getJoins($request))
             ->doWhere($this->getWhere($request))
             ->where("deleted", false)
             ->sort($this->getSort($request));
-        if ($user->account_id != $accountId) {
-            $list->where("account_id", $user->account_id);
-        }
 
         if(isset($_GET['limit']))
         {

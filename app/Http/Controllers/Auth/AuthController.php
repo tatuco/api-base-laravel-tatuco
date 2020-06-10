@@ -53,10 +53,6 @@ class AuthController extends BaseController
                 'id' => $user->id,
                 'name' => $user->name,
                 'email' => $user->email,
-                'accountId' => $user->account->id,
-                'accountName' => $user->account->name,
-                'accountLogo' => $user->account->logo,
-                'accountConfig' => $user->account->config,
                 'role' => $role
             ],
         ], 200);
