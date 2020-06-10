@@ -1,5 +1,5 @@
 {
-    "name": "APIREST-BASE-LARAVEL",
+    "name": "tatuco/API-REST-BASE-Laravel",
     "type": "project",
     "description": "Project base for api rest.",
     "license": "MIT",
