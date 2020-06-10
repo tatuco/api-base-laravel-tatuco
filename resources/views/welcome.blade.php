@@ -29,6 +29,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
+                    <h3>API-LARAVEL-BASE</h3>
             <!---      <img src="{{ asset('images/geosam.png') }}"  class="centinela-img"> --->
             <!---  <img src="{{ asset('images/logocentinela.png') }}"  class="yoplanifico-img"> --->
             </div>
@@ -37,7 +38,7 @@
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="">API-REST</a>
                     <a href="">Luis Ramirez</a>
-                    <a href="">Plazfer Spa</a>
+                    <a href=""></a>
                     <a href="https://github.com/tatuco">GitHub</a>
                 </div>
             </div>

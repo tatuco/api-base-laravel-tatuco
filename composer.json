@@ -1,7 +1,19 @@
 {
-    "name": "yoplanifico-api",
+    "name": "APIREST-BASE-LARAVEL",
     "type": "project",
-    "description": "Plazfer Spa",
+    "description": "Project base for api rest.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luis Jose Ramirez Mendez"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/tatuco/api-laravel-base.git"
+        }
+    ],
     "keywords": [
         "framework",
         "laravel"
@@ -80,5 +92,4 @@
             "@php artisan key:generate --ansi"
         ]
     }
-
 }
