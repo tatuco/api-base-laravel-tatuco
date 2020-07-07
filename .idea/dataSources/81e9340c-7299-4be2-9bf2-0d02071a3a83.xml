@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="geosam_laravel">
-  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.15">
+  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.16">
     <root id="1">
       <ServerVersion>10.3.16</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -42,7 +42,6 @@
     <schema id="13" parent="1" name="geo">
       <Current>1</Current>
       <Collation>latin1_swedish_ci</Collation>
-      <Visible>1</Visible>
     </schema>
     <schema id="14" parent="1" name="geosam">
       <Collation>utf8_unicode_ci</Collation>
@@ -50,7 +49,6 @@
     <schema id="15" parent="1" name="geosam_laravel">
       <Current>1</Current>
       <Collation>latin1_swedish_ci</Collation>
-      <Visible>1</Visible>
     </schema>
     <schema id="16" parent="1" name="gps">
       <Collation>latin1_swedish_ci</Collation>
@@ -103,7 +101,6 @@
     <schema id="32" parent="1" name="yoplanifico">
       <Current>1</Current>
       <Collation>utf8_unicode_ci</Collation>
-      <Visible>1</Visible>
     </schema>
     <collation id="33" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
